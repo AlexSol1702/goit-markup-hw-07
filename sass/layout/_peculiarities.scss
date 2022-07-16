@@ -1,0 +1,31 @@
+.peculiarities {
+    --item: 4;
+
+    
+&__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--titl-cl);
+}
+&__icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    background-color: var(--bcg-light);
+    
+    border-radius: 4px
+}
+&__icon {
+    width: 70px;
+    height: 70px;
+}
+}
+

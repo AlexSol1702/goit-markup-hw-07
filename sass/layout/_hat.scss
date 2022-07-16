@@ -1,0 +1,23 @@
+.hat {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bcg-dark);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/Img.jpg);
+    background-position: center; 
+
+    &__title {
+        color: var(--primery-cl);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-transform: uppercase;
+    
+        margin-bottom: 30px;
+    }   
+}
+
+

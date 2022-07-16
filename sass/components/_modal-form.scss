@@ -1,0 +1,67 @@
+.modal-form {
+    position: relative;
+}
+.form {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    &__list:not(last-child) {
+        margin-bottom: 28px;
+    }
+    &__lbl {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        z-index: 1;
+    
+        font-size: 12px;
+    }
+}
+
+
+
+.form__inp {
+    width: 100%;
+    height: 100%;
+    padding-left: 42px;
+    border: 1px solid var(--modal-br-cl);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+    border-color:  var(--btn-hover);
+    outline: transparent;
+}
+    &:hover + .modal__input-icon,
+    &:focus + .modal__input-icon {
+    fill: var(--btn-hover);
+}
+}
+
+.modal__input-icon {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 12px; 
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form.textarea {
+    height: 120px;
+}
+.form__inp.textarea {
+    height: 100%;
+    resize: none;
+    padding: 12px 16px;
+}

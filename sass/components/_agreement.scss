@@ -1,0 +1,48 @@
+.agreement {
+    margin-top: 20px;
+    
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 5px;
+
+    &__txt {
+        Font-size: 14px;
+        Line-height: 1.7;
+    }
+    &__custom-check {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 15px;
+    
+        background-color: transparent;
+    
+        border: 2px solid var(--titl-cl);
+        border-radius: 2px;
+        
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+}
+
+
+.icon-check {
+   
+    fill: var(--primery-cl);
+}
+.agreement__inp:checked + .agreement__custom-check {
+    background-color: var(--btn-hover);
+    border: none;
+}
+.agreement__inp:hover + .agreement__custom-check,
+.agreement__inp:focus + .agreement__custom-check {
+    border-color: var(--btn-hover);
+}
+.agreement__link {
+    color: var(--accent);
+}

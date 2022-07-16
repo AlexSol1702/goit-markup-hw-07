@@ -1,0 +1,12 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--card-gap) /2);
+    
+    &__item {
+        margin: calc(var(--card-gap) / 2);
+        flex-basis: calc((100% - (var(--item)) * var(--card-gap)) / var(--item));
+        background-color: var(--primery-cl);
+    }
+}
+
