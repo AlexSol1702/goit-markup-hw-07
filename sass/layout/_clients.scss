@@ -1,0 +1,46 @@
+.clients {
+    --item: 6;
+
+    &__title { 
+        margin-bottom: 50px; 
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        color: var(--titl-cl);
+    
+    }
+
+    &__icon {
+        width: 106px;
+        height: 60px;
+        fill: currentColor;
+    }
+}
+ 
+
+
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    
+    color: var(--icon-cl);
+    border: 1px solid var(--icon-cl);
+    border-radius: 4px;
+
+    transition-property: сolor, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+}
+
+

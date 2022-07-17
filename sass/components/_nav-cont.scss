@@ -1,32 +1,44 @@
 .nav__list,
 .contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(500, 14px, 1.14);
 
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.nav__item,
 .contact__item {
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &:focus,
+    &:hover {
+            color: var(--accent);
+            cursor: pointer;
+        }
 }
 .nav__item:not(:last-child) {
     margin-right: 50px;
 }
  .nav__item {
     position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
  }
 
 .nav__link {
     display: block;
     color: var(--titl-cl);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.current,
+    &:hover,
+    &:focus {
+        color: var(--accent);
+        cursor: pointer;
+    }
+
+    @include transition(color);
 }
 .nav__link::after {
     content:"";
@@ -51,9 +63,12 @@
         display: flex;
         align-items: center;
         color: inherit;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        
+
+        @include transition(color);
+        @include transition(fill);
+        
     }
 }
 

@@ -1,19 +1,5 @@
-@import 'utils/font';
-@import 'utils/visualiy-hidden';
+@import './utils/index';
+@import './base/index';
+@import './components/index';
+@import './layout/index';
 
-@import 'base/root';
-@import 'base/reset';
-
-@import 'components/btn';
-@import 'components/grid';
-@import 'components/backdrop';
-@import 'components/modal-window';
-@import 'components/modal-form';
-@import 'components/agreement';
-@import 'components/logotype';
-@import 'components/nav-cont';
-
-@import 'layout/header';
-@import 'layout/hat';
-@import 'layout/peculiarities';
-@import 'layout/doing';

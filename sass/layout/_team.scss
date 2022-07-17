@@ -1,0 +1,38 @@
+.team {
+    --item: 4;
+    background-color: var(--bcg-light);
+
+    &__title {
+        @include font(700, 36px, 1.16);
+        
+        text-align: center;
+    
+        color: var(--titl-cl);
+        margin-bottom:  50px;
+    }
+}
+
+
+
+.team .card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card__content {
+    text-align: center;
+    padding-top: var(--card-gap);
+    padding-bottom: var(--card-gap);
+}
+.card__title {
+    @include font(500, 16px, 1.2);
+
+    color: var(--titl-cl);    
+}
+
+.card__txt {
+    @include font(400, 16px, 1.2);
+
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
